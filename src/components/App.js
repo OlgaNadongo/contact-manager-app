@@ -17,10 +17,14 @@ function App() {
     .catch(error=>console.log(error))
   },[])  
 
+  function addAcontact(newContact){
+    setContacts([...contacts,newContact])
+  }
+
   return (
     <div className="App">
          <NavBar />
-         <NewContactForm />
+         <NewContactForm addAcontact={addAcontact}/>
          <ContactContainer contact={contacts} setContacts={setContacts}/>
          <Footer />
     </div>
