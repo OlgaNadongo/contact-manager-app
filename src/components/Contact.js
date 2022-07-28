@@ -4,7 +4,7 @@ function Contact({id,name,email, deleteAcontact}){
 
 
     function handleDelete(){
-        fetch(` http://localhost:000/contacts/${id}`,{
+        fetch(`http://localhost:4000/contacts/${id}`,{
           method:'DELETE'
         })
         .then(response=>response.json())
@@ -20,16 +20,16 @@ function Contact({id,name,email, deleteAcontact}){
                 background:"#2F96B2",
                 width: "430",
                 height: "70",}} >
-            <div
-               >
-                <h2>name</h2>
-                <p>email</p>
+            <div>
+                <h2>{name}</h2>
+                <p>{email}</p>
             </div>
             
               <button 
                     style={{borderRadius:"20",
                     backgroundColor:"#040C3A",
-                    color:"#F5F5F5"}}>
+                    color:"#F5F5F5"}} 
+                    onClick={handleDelete}>
                     Delete
                     </button>
 

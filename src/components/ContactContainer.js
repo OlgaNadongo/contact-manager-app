@@ -10,36 +10,43 @@ function ContactContainer({contacts, setContacts}) {
 
 
 //implementing delete
-  function deleteAcontact(id){
-    setContacts(contacts.filter(contact=>contact.id !== id));
-    } 
-    
-   
+function deleteAcontact(id){
+  setContacts(contacts.filter(contact=>contact.id !== id));
+  }  
+
+
 //implementing search
 function  searchText(e){
-    setFilterItem(e.target.value)
- }
+   setFilterItem(e.target.value)
+}
 
-
-let  contactSearch=contacts.filter(contact=>{
-    return Object.keys(contact).some(key=>
-   contact[key].toString().toLowerCase().includes(filter.toString().toLowerCase())
-   
-   )
-}) 
+// let  contactSearch=contacts.filter((contact)=>{
+// return Object.keys(contact).some(key=>
+//   contact[key].toString().toLowerCase().includes(filter.toString().toLowerCase())
   
-  return (
-    <div className='contactscontainer'>  
-         <input type="text" className='searchContent' placeholder='Search...'  />
-         <div>
-          
-        {
-          contactSearch.map(contact=><Contact key={contact.id} id={contact.id} name={contact.name} email={contact.email} deleteAcontact />
-      )}
-        </div>
-       
-    </div>
-  );
+//   )
+// })
+
+
+return (
+<div className='contactscontainer'>
+
+    <input type="text" className='searchContent' placeholder='Search...' value={filter}  onChange={searchText.bind(this)} />
+
+  <div 
+      className="contactbox"
+      style={{
+      textAlign: "center",
+      marginLeft:"2" }}>
+    
+  {/* {
+    contacts.map(contact=><Contact key={contact.id} id={contact.id} name={contact.name} email={contact.email} deleteAcontact={deleteAcontact} />
+)} */}
+  </div>
+ 
+
+ 
+</div>)
 }
 
 export default ContactContainer;

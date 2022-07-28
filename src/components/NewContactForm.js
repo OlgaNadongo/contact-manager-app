@@ -13,7 +13,7 @@ function NewContactForm({addAcontact}){
       }
 
       function handleFormSubmit(event){
-        
+
         event.preventDefault();
         fetch('http://localhost:4000/contacts',{
           method:'POST',
@@ -32,12 +32,15 @@ function NewContactForm({addAcontact}){
       }
 
 
-    return(<div className="formcontainer" onSubmit={handleFormSubmit} style={{backgroundColor:"red"}}>
-              <form>
+    return(<div className="formcontainer" style={{backgroundColor:"red"}}>
+             
+              <form onSubmit={handleFormSubmit} >
                 <input placeholder="Name" name="name" value={contactFormData.name} onChange={handleInputChange}/>
                 <input placeholder="Email" name="email" value={contactFormData.email} onChange={handleInputChange} />
                 <input type="submit" className='submitbtn' value="Add Contact" />
+              
               </form>
+              
           </div>)
 }
 
