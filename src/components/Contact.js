@@ -1,6 +1,19 @@
 import React from "react";
 
-function Contact(){
+function Contact({id,name,email, deleteAcontact}){
+
+
+    function handleDelete(){
+        fetch(` http://localhost:000/contacts/${id}`,{
+          method:'DELETE'
+        })
+        .then(response=>response.json())
+        .then(data=>deleteAcontact(id))
+        .catch(error=>console.log(error))
+      }
+
+
+
     return (
         <div 
                 style={{
@@ -25,4 +38,4 @@ function Contact(){
     )
 }
 
-export default Contact
+export default Contact;
