@@ -4,7 +4,7 @@ import React,{useState} from "react";
 
 
 function NewContactForm({addAcontact}){
-    
+
 
     const [contactFormData,setContactData]= useState({name:"",email: ""});
      
@@ -13,6 +13,7 @@ function NewContactForm({addAcontact}){
       }
 
       function handleFormSubmit(event){
+        
         event.preventDefault();
         fetch('http://localhost:4000/contacts',{
           method:'POST',
@@ -29,6 +30,7 @@ function NewContactForm({addAcontact}){
         })
         .catch(error=>console.log(error))
       }
+
 
     return(<div className="formcontainer" onSubmit={handleFormSubmit} style={{backgroundColor:"red"}}>
               <form>
