@@ -61,6 +61,7 @@ function Contact ({id,name,email, deleteAcontact}) {
          width: "430",
         height: "70",}}>
       <div style={{marginTop:"15px"}}>
+
         <h2>{name}</h2>
         <p>{email}</p>
   
@@ -74,5 +75,7 @@ function Contact ({id,name,email, deleteAcontact}) {
     
   
 }
+
+
 
 export default Contact;

@@ -55,6 +55,7 @@ import Contact from './Contact';
 
 
 
+
 function ContactContainer ({contacts,setContacts}) {
 
   const [filter, setFilterItem]=useState('')
@@ -86,7 +87,7 @@ function ContactContainer ({contacts,setContacts}) {
         <div 
             className="contactbox"
             style={{
-            textAlign: "center",
+            // textAlign: "center",
             marginLeft:"2" }}>
           
         {

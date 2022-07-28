@@ -87,13 +87,13 @@ function NewContactForm ({addAcontact}) {
          
          
         
-        <form onSubmit={handleFormSubmit} className="formItems">
+        <form onSubmit={handleFormSubmit} className="formitems" >
 
-          <div className='input'>
+          
             <input placeholder="Name" name="name" value={contactFormData.name} onChange={handleInputChange}/>
-            <input placeholder="Email" name="email" value={contactFormData.email} onChange={handleInputChange}/>
+            <input placeholder="Email" name="email" value={contactFormData.email} onChange={handleInputChange}/> 
             <input type="submit" className='submitbtn' value="Add Contact" />
-          </div>
+          
             
         </form>
 

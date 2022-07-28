@@ -38,6 +38,8 @@ import React,{useEffect, useState} from 'react';
 import './App.css';
 import ContactContainer from './ContactContainer';
 import NewContactForm from './NewContactForm'
+import Footer from './Footer';
+import NavBar from './NavBar';
 
 
 
@@ -62,20 +64,11 @@ function App() {
   }
 
   return (
-    <div style={{
-      background: "#040C3A",
-      width: "450",
-      height: "636",
-      borderRadius: "10px",
-      color:"#FCF9F9",
-      alignItems: "center",
-      justifyContent:"center",
-      marginLeft:"150"
-    }}>
-       {/* <Header /> */}
+    <div>
+       <NavBar />
        <NewContactForm addAcontact={addAcontact}/>
        <ContactContainer contacts={contacts} setContacts={setContacts}  />
-       
+       <Footer />
        
     </div>)
   
