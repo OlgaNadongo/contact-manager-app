@@ -65,9 +65,11 @@ function Contact ({id,name,email, deleteAcontact}) {
         <p>{email}</p>
   
     </div>
-    <button  onClick={handleDelete} style={{borderRadius:"20",
+    <button  onClick={handleDelete} style={{
+      borderRadius:"20px",
       backgroundColor:"#040C3A",
-      color:"#F5F5F5"}}>Del</button>
+      color:"#F5F5F5",
+      marginBottom:"5px"}}>Delete</button>
     </div>)
     
   
