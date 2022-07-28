@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import './App.css';
 import Footer from './Footer';
 import NavBar from './NavBar';
@@ -7,11 +7,21 @@ import ContactContainer from './ContactContainer';
 
 
 function App() {
+  
+  const[contacts, setContacts]=useState([])
+   
+  useEffect(()=>{
+    fetch ("http://localhost:4000/contacts")
+    .then(response=>response.json())
+    .then(data=>setContacts(data))
+    .catch(error=>console.log(error))
+  },[])  
+
   return (
     <div className="App">
          <NavBar />
          <NewContactForm />
-         <ContactContainer />
+         <ContactContainer contact={contacts} setContacts={setContacts}/>
          <Footer />
     </div>
   );
