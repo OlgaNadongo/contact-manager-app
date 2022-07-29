@@ -7,6 +7,11 @@
    
 }
 
+nav{
+  display: flex;
+  justify-content: space-around;
+}
+
 .formitems{
  
   width:450px;
@@ -17,7 +22,7 @@
   margin-top: 20px;
   margin-bottom: 20px;
   padding:5px;
-  background-color: yellow;
+  background-color: #2F96B2;
   display: flex;
   
   
@@ -52,7 +57,7 @@
   margin-left: 5px;
   } */
   .submitbtn{
-    background: #2F96B2;
+    background: #040C3A;
    color:#FCF9F9 ;
    height:32px;
    
@@ -78,7 +83,7 @@
      align-items: center;
     }
 
-Footer{
+/* Footer{
   justify-content: center;
-}
+} */
 
