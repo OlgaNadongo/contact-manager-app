@@ -17,7 +17,7 @@ function NavBar() {
         
         }}>
 
-         <h4 style={{marginTop:"2px"}}>Contact list Manager</h4>
+         <h4 style={{marginTop:"2px"}}>Contact List Manager</h4>
          
             <NavLink style={{
               color:"#040C3A",
@@ -27,7 +27,7 @@ function NavBar() {
             <NavLink 
             style={{
               color:"#040C3A",
-              textDecoration:"none"}} to="/contacts">Contact</NavLink>
+              textDecoration:"none"}} to="/contacts">Contacts</NavLink>
            
             <NavLink 
             style={{
