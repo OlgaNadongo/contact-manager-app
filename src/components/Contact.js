@@ -41,6 +41,7 @@
 // export default Contact;
 
 import React from 'react';
+import image from "./images/user2.png"
 
 function Contact ({id,name,email, deleteAcontact}) {
 
@@ -60,13 +61,23 @@ function Contact ({id,name,email, deleteAcontact}) {
       background:"#2F96B2",
          width: "95%",
         height: "30%",
-        marginLeft:"12px",
-        borderRadius:"10px"}}>
+        marginLeft:"9px",
+        borderRadius:"10px",
+        }}>
 
-      <div style={{marginTop:"15px"}}>
-
-        <h2>{name}</h2>
-        <p>{email}</p>
+      <div style={{marginTop:"15px",
+                  display:"flex"}}>
+        <img  style={{marginLeft:"2%",
+                       marginTop:"15px",
+                        width:"25%",
+                        height:"15%",
+                     borderRadius:"50%",
+                     }} src={image}/>
+      <div style={{marginLeft:"10%"}}>
+         <h2>{name}</h2>
+         <p>{email}</p>
+      </div>               
+        
   
     </div>
     <button  onClick={handleDelete} style={{
