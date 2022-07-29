@@ -42,6 +42,7 @@ import Footer from './Footer';
 import NavBar from './NavBar';
 import About from './About';
 import {Route, Routes} from "react-router-dom"
+import ErrorPage from './ErrorPage';
 
 
 
@@ -78,6 +79,7 @@ function App() {
 
               <Route path="/contacts" element={ <ContactContainer contacts={contacts} setContacts={setContacts}  />}/>
               <Route path="/about" element={<About />}/>
+              <Route path="*" element={<ErrorPage/>}/>
           </Routes>
           <Footer />
        

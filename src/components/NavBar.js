@@ -13,12 +13,9 @@ function NavBar() {
         color:"#040C3A"
        
         }}>
-         {/* < a href="#home">Home</a>
-         < a href="#about">Contacts</a>
-         < a href="#about">About us</a> */}
+         <h4>Contact list Manager</h4>
          <NavLink to="/">Home</NavLink>
-         <NavLink to="/contacts" >
-          Contact</NavLink>
+         <NavLink to="/contacts">Contact</NavLink>
          <NavLink to="/about">About Us</NavLink>
     </div>
   );
