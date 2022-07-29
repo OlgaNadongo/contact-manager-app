@@ -58,8 +58,11 @@ function Contact ({id,name,email, deleteAcontact}) {
   return (
     <div style={{
       background:"#2F96B2",
-         width: "430",
-        height: "70",}}>
+         width: "95%",
+        height: "30%",
+        marginLeft:"12px",
+        borderRadius:"10px"}}>
+
       <div style={{marginTop:"15px"}}>
 
         <h2>{name}</h2>

@@ -8,8 +8,11 @@ function Footer() {
         color:"#040C3A",
         width:"450px",
         height: "50px",
-        borderRadius: "5px"}} >
-        <p>copyright@olgaN</p>
+        borderRadius: "5px",
+        paddingTop:"5px"}} >
+        <p style={{color:"040C3A"}}
+        > &copy;{new Date().getFullYear()} Wanne Inc| All rights reserved
+        </p>
     </div>
   );
 }

@@ -10,13 +10,31 @@ function NavBar() {
         height: "50px",
         borderRadius: "5px",
         marginTop:"25px",
-        color:"#040C3A"
-       
+        color:"#040C3A",
+        display:"flex",
+        justifyContent: "space-around",
+        paddingTop:"7px"
+        
         }}>
-         <h4>Contact list Manager</h4>
-         <NavLink to="/">Home</NavLink>
-         <NavLink to="/contacts">Contact</NavLink>
-         <NavLink to="/about">About Us</NavLink>
+
+         <h4 style={{marginTop:"2px"}}>Contact list Manager</h4>
+         
+            <NavLink style={{
+              color:"#040C3A",
+              textDecoration:"none"
+              }} to="/">Home</NavLink>
+            
+            <NavLink 
+            style={{
+              color:"#040C3A",
+              textDecoration:"none"}} to="/contacts">Contact</NavLink>
+           
+            <NavLink 
+            style={{
+              color:"#040C3A",
+              textDecoration:"none"}} to="/about">About Us</NavLink>
+         
+         
     </div>
   );
 }

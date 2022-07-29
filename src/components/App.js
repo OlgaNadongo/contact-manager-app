@@ -68,8 +68,8 @@ function App() {
 
   return (
     <div>
-       <NavBar />
-      
+          <NavBar />
+        
           {/* <NewContactForm addAcontact={addAcontact}/>
           <ContactContainer contacts={contacts} setContacts={setContacts}  />
           <Footer /> */}
@@ -81,6 +81,7 @@ function App() {
               <Route path="/about" element={<About />}/>
               <Route path="*" element={<ErrorPage/>}/>
           </Routes>
+           
           <Footer />
        
     </div>)
