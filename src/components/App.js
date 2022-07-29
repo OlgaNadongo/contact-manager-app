@@ -41,7 +41,7 @@ import NewContactForm from './NewContactForm'
 import Footer from './Footer';
 import NavBar from './NavBar';
 import About from './About';
-import {Route, Switch} from "react-router-dom"
+import {Route, Routes} from "react-router-dom"
 
 
 
@@ -68,13 +68,18 @@ function App() {
   return (
     <div>
        <NavBar />
-       <Switch>
-          <NewContactForm addAcontact={addAcontact}/>
+      
+          {/* <NewContactForm addAcontact={addAcontact}/>
           <ContactContainer contacts={contacts} setContacts={setContacts}  />
-          <About /> 
-       </Switch>
-       
-       <Footer />
+          <Footer /> */}
+          <Routes>
+              <Route path="/" element={ <><NewContactForm addAcontact={addAcontact}/>
+          <ContactContainer contacts={contacts} setContacts={setContacts}  /></>} />
+
+              <Route path="/contacts" element={ <ContactContainer contacts={contacts} setContacts={setContacts}  />}/>
+              <Route path="/about" element={<About />}/>
+          </Routes>
+          <Footer />
        
     </div>)
   
