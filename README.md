@@ -1,6 +1,6 @@
 # **CONTACT LIST MANAGER**
 ### **Author**
-     Olga 
+     Olga Nadongo
 ##   **Description** 
 
 
