@@ -6,6 +6,11 @@
 
  ## **Project Set Up**
 
+ - [x] Open the app to see all contacts
+ - [x] Fill the name and email fields then click Add to add a contact
+ - [x] Delete an existing contact by clicking the delete button
+ - [x]Search for any contact by typing in the search field
+
 ## **Link**
 
 
