@@ -63,6 +63,7 @@ function Contact ({id,name,email, deleteAcontact}) {
         height: "30%",
         marginLeft:"9px",
         borderRadius:"10px",
+        color:"white"
         }}>
 
       <div style={{marginTop:"15px",
@@ -72,7 +73,8 @@ function Contact ({id,name,email, deleteAcontact}) {
                         width:"25%",
                         height:"15%",
                      borderRadius:"50%",
-                     }} src={image}/>
+                     }} src={image}
+                     alt="user "/>
       <div style={{marginLeft:"10%"}}>
          <h2>{name}</h2>
          <p>{email}</p>

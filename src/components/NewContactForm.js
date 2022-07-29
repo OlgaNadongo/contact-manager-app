@@ -92,7 +92,7 @@ function NewContactForm ({addAcontact}) {
           
             <input placeholder="Name" name="name" value={contactFormData.name} onChange={handleInputChange}/>
             <input placeholder="Email" name="email" value={contactFormData.email} onChange={handleInputChange}/> 
-            <input type="submit" className='submitbtn' value="Add Contact" />
+            <input type="submit" className='submitbtn' value="Add" />
           
             
         </form>
