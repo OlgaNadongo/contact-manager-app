@@ -6,7 +6,7 @@ function Contact ({id,name,email, deleteAcontact}) {
 
 
     function handleDelete(){
-        fetch(` http://localhost:4000/contacts/${id}`,{
+        fetch(` https://agile-plains-31264.herokuapp.com/contacts/${id}`,{
           method:'DELETE'
         })
         .then(response=>response.json())

@@ -63,7 +63,7 @@ function NewContactForm ({addAcontact}) {
      
       function handleFormSubmit(event){
         event.preventDefault();
-        fetch('http://localhost:4000/contacts',{
+        fetch('https://agile-plains-31264.herokuapp.com/contacts',{
           method:'POST',
           headers:{
             'Content-Type':'Application/json',

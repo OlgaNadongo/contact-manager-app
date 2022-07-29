@@ -19,7 +19,7 @@ function App() {
  
 
   useEffect(()=>{
-    fetch ("http://localhost:4000/contacts")
+    fetch ("https://agile-plains-31264.herokuapp.com/contacts")
     .then(response=>response.json())
     .then(data=>setContacts(data))
     .catch(error=>console.log(error))
